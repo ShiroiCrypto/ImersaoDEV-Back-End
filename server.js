@@ -8,10 +8,12 @@ const posts = [
 ];
 
 const app = express();
+app.use(express.json());
+
 app.listen(3000, () => {
     console.log("Servidor escutando...");
 });
 
-app.get("/api", (req, res) => {
-    res.status(200).send("Servidor ativado! Preparem os cafezinhos, a imersão de código começou! ☕.");
+app.get("/posts", (req, res) => {
+    res.status(200).send();
 });
