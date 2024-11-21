@@ -29,4 +29,4 @@ function buscarPostID(id) {
 app.get("/posts/:id", (req, res) => {
     const index = buscarPostID(req.params.id)
     res.status(200).json(posts[index]);
-});
+});w
