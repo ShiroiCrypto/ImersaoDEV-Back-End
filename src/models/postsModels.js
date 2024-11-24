@@ -12,5 +12,5 @@ export async function criarPost(novoPost)
 {
     const db = conexao.db("LunaDB");
     const colecao = db.collection("posts");
-    return colecao.find().toArray();
+    return colecao.find().toArray(novoPost);
 }
