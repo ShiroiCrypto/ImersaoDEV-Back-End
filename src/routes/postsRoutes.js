@@ -5,6 +5,8 @@ const routes = (app) => {
     app.use(express.json());
     
     app.get("/posts", listarPosts);
+    //envia algo
+    app.post("/posts", )
 }
 
 export default routes;
